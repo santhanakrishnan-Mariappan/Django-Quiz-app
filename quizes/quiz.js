@@ -65,7 +65,7 @@ const sendData = () => {
             document.write(results) ;         
             document.write("<h1>Your Score is : </h1>","<h1>",score,"</h1>") ; 
             const answers = response.answers
-            document.write(answers)
+//             document.write(answers)
             console.log(results) ;   
             quizForm.setAttribute('class','invisible')  ;    
                  
