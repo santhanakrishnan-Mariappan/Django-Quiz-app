@@ -1,0 +1,27 @@
+{% extends "index.html" %}
+
+{% load static %}
+
+{% block scripts %}
+ <script src="{% static 'quiz.js' %}" defer></script>
+{% endblock scripts %}
+
+{% block title %}
+
+{{obj.name}}
+
+{% endblock %}
+
+
+{% block content%}
+
+<h2>{{obj.name}}</h2><hr>
+
+<form id = "quiz-form" class="mt-2 mb-2">
+   {% csrf_token %}
+   <div id="quiz-box"></div>
+   <button type="submit" class="btn btn-primary mt-3 save">save</button>
+
+</form>                                                                                                  
+     
+{% endblock %}
